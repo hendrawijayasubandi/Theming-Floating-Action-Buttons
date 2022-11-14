@@ -51,9 +51,30 @@
 
         <!--for the extended FAB the cornerFamily is given the value as the cut-->
         <item name="cornerFamily">cut</item>
+        <!--this attribute will make changes to Top Right according to value-->
+        <item name="cornerSizeTopRight">0dp</item>
+        <!--this attribute will make changes to Top Left according to value-->
+        <item name="cornerSizeTopLeft">0dp</item>
+        <!--this attribute will make changes to Bottom Right according to value-->
+        <item name="cornerSizeBottomRight">0dp</item>
+        <!--this attribute will make changes to Bottom Left according to value-->
+        <item name="cornerSizeBottomLeft">0dp</item>
 
-        <!--and the cornerSize makes the cut for all 4 corners of the FAB as 10dp-->
-        <item name="cornerSize">10dp</item>
+    </style>
+
+    <!--for Normal FAB-->
+    <style name="customNormalFAB">
+
+        <!--for the extended FAB the cornerFamily is given the value as the cut-->
+        <item name="cornerFamily">cut</item>
+        <!--this attribute will make changes to Top Right according to value-->
+        <item name="cornerSizeTopRight">0dp</item>
+        <!--this attribute will make changes to Top Left according to value-->
+        <item name="cornerSizeTopLeft">0dp</item>
+        <!--this attribute will make changes to Bottom Right according to value-->
+        <item name="cornerSizeBottomRight">0dp</item>
+        <!--this attribute will make changes to Bottom Left according to value-->
+        <item name="cornerSizeBottomLeft">0dp</item>
 
     </style>
 
@@ -67,7 +88,7 @@
         <item name="colorSecondary">@color/teal_200</item>
 
         <!--this attribute gives makes the change in the text and icon color of the FAB-->
-        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorOnSecondary">@android:color/black</item>
 
     </style>
     <!--Changing the theme of the extended FAB completes here-->
@@ -93,27 +114,14 @@
             two children are implemented separately-->
     </style>
 
-    <style name="customNormalFAB">
-
-        <!--for the normal FAB the cornerFamily is given the value as the rounded-->
-        <!--in this case it has been done to differentiate the
-            themes of the normal FAB and extended FAB-->
-        <item name="cornerFamily">rounded</item>
-
-        <!--and the cornerSize makes rounded corner for all
-            4 corners of the FAB as 20dp radius-->
-        <item name="cornerSize">20dp</item>
-
-    </style>
-
     <style name="myCustomThemeForNormalFab" parent="">
 
         <!--for the extended FAB the cornerFamily is given the value as the cut-->
-        <item name="colorSecondary">@android:color/holo_green_dark</item>
 
         <!--this attribute gives makes the change in the text and icon color of the FAB-->
-        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorOnSecondary">@android:color/black</item>
 
     </style>
     <!--Changing the theme of the normal FAB completes here-->
+
 </resources>
