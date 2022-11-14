@@ -12,5 +12,15 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="21">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <!--to do the changes in the corner, the cornerFamily
+            attribute is the part of the SmallComponent-->
+        <!--so we need to override the shapeAppearanceSmallComponent-->
+        <!--which is the default theme applied for all of the
+            Google MDC buttons it may be FAB or MDC Buttons-->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
     </style>
 </resources>
